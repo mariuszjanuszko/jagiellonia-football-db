@@ -63,7 +63,7 @@ Includes over **25 real players** currently associated with **Jagiellonia Biały
 
 ## 🚀 Getting Started
 
-1. Clone the repository  
+1. Go to the **sql** folder to view or copy the full SQL scripts used in this project.
 2. Open **DBeaver** and connect to your local OracleXE instance  
 3. Run the SQL scripts to:
    - Drop and recreate the `players` table  
