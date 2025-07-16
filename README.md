@@ -2,7 +2,7 @@
 
 This is a personal SQL database project inspired by **Jagiellonia Białystok**, the professional football club from my birth city.
 
-The database is built using **DBeaver** on **OracleXE 21.3**. It models key data about the team's players, such as positions, physical attributes, nationalities, and contract details.
+The database is built using **DBeaver** on **OracleXE 21.3**. It models key data about the team's players, such as positions, physical attributes, nationalities and contract details.
 
 ---
 
