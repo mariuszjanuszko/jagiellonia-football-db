@@ -61,9 +61,21 @@ Includes over **25 real players** currently associated with **Jagiellonia Biały
 
 ---
 
+## 📄 SQL Queries
+
+The **/sql/queries** folder includes analytical queries for exploring the player database, such as:
+
+- 🇵🇱 Listing all Polish players
+- 👟 Finding two-footed players
+- 📆 Counting players by contract expiration
+- 🎂 Calculating player ages
+- 🏆 Finding the longest-serving player
+
+---
+
 ## 🚀 Getting Started
 
-1. Go to the **sql** folder to view or copy the full SQL scripts used in this project.
+1. Go to the **/sql/players_table** folder to view or copy the full SQL scripts used in this project.
 2. Open **DBeaver** and connect to your local OracleXE instance  
 3. Run the SQL scripts to:
    - Drop and recreate the `players` table  
