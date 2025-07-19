@@ -1,12 +1,11 @@
 🇬🇧 English version available: [README.md](README.md)
 
-**📊 Progetto Database Calcistico — Jagiellonia Białystok**
+📊 Progetto Database Calcistico — Jagiellonia Białystok
 
 Questo è un progetto personale di database SQL ispirato alla Jagiellonia Białystok, la squadra di calcio professionistica della mia città natale.
 
 Il database è stato creato utilizzando DBeaver su OracleXE 21.3. Modella i dati principali dei giocatori della squadra, come ruoli, attributi fisici, nazionalità e dettagli contrattuali.
-
-**📌 Obiettivi del Progetto**
+📌 Obiettivi del Progetto
 
     Imparare e mettere in pratica la progettazione di database relazionali
 
@@ -16,7 +15,7 @@ Il database è stato creato utilizzando DBeaver su OracleXE 21.3. Modella i dati
 
     Costruire materiale per il portfolio su GitHub e nel CV
 
-**🏗️ Tecnologie Utilizzate**
+🏗️ Tecnologie Utilizzate
 
     💻 OracleXE 21.3 (motore di database locale)
 
@@ -28,8 +27,7 @@ Il database è stato creato utilizzando DBeaver su OracleXE 21.3. Modella i dati
 
     📊 Power BI (per creare report visivi e dashboard)
 
-**📂 Panoramica del Database**
-
+📂 Panoramica del Database
 Tabella: players
 Nome Colonna	Tipo Dato	Descrizione
 player_id	NUMBER	Chiave primaria (auto-incrementata tramite sequenza)
@@ -43,12 +41,11 @@ height_cm	NUMBER(3)	Altezza in centimetri
 preferred_foot	VARCHAR2(10)	'left', 'right' o 'both'
 joined_club	DATE	Data di ingresso nel club
 contract_until	DATE	Data di scadenza del contratto
-
-**Sequenza**
+Sequenza
 
     player_seq – gestisce l’auto-incremento del campo player_id
 
-**🧪 Dati di Esempio**
+🧪 Dati di Esempio
 
 Include oltre 25 giocatori reali attualmente associati alla Jagiellonia Białystok, tra cui:
 
@@ -76,7 +73,7 @@ La cartella /sql/queries contiene query analitiche per esplorare il database dei
 
     🏆 Giocatore da più tempo nel club
 
-**🚀 Come Iniziare**
+🚀 Come Iniziare
 
     Vai alla cartella /sql/players_table per visualizzare o copiare gli script SQL completi
 
@@ -90,7 +87,7 @@ La cartella /sql/queries contiene query analitiche per esplorare il database dei
 
         Inserire tutti i dati di esempio
 
-**🔮 Piani Futuri**
+🔮 Piani Futuri
 
     ➕ Aggiungere nuove tabelle:
 
@@ -102,8 +99,6 @@ La cartella /sql/queries contiene query analitiche per esplorare il database dei
 
         contracts
 
-        transfers
-
     📊 Costruire dashboard in Power BI (distribuzione età, nazionalità, scadenze contratti)
 
     🐍 Utilizzare Python per analizzare trend (es. età vs durata del contratto)
@@ -112,7 +107,7 @@ La cartella /sql/queries contiene query analitiche per esplorare il database dei
 
     📤 Esportare il diagramma ERD per la documentazione
 
-**🙋 Su di Me**
+🙋 Su di Me
 
 Sono un aspirante Data Analyst attualmente impegnato a migliorare le mie competenze in SQL, modellazione dei dati e reporting.
 Questo database riflette sia la mia crescita tecnica che la mia passione per il calcio e per la mia squadra del cuore — Jagiellonia Białystok.
