@@ -1,3 +1,5 @@
+🇬🇧 English version available: [README.md](README.md)
+
 📊 Progetto Database Calcistico — Jagiellonia Białystok
 
 Questo è un progetto personale di database SQL ispirato alla Jagiellonia Białystok, la squadra di calcio professionistica della mia città natale.
