@@ -1,3 +1,5 @@
+🇮🇹 Versione italiana disponibile: [README.it.md](README.it.md)
+
 # 📊 Football Team Database Project — Jagiellonia Białystok
 
 This is a personal SQL database project inspired by **Jagiellonia Białystok**, the professional football club from my birth city.
