@@ -1,3 +1,5 @@
+DROP TABLE players;
+
 CREATE TABLE players (
     player_id NUMBER PRIMARY KEY,
     player_number NUMBER(2) UNIQUE,
