@@ -31,23 +31,42 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 
 ### Tabella: `players`
 
-| Nome Colonna      | Tipo Dato    | Descrizione                               |
-|------------------|--------------|-------------------------------------------|
+| Nome Colonna      | Tipo Dato    | Descrizione                               			 |
+|------------------|--------------|------------------------------------------------------|
 | `player_id`      | NUMBER       | Chiave primaria (auto-incrementata tramite sequenza) |
-| `player_number`  | NUMBER(2)    | Numero di maglia univoco                   |
-| `position`       | VARCHAR2(50) | Ruolo in campo del giocatore               |
-| `first_name`     | VARCHAR2(50) | Nome                                      |
-| `last_name`      | VARCHAR2(50) | Cognome                                   |
-| `birth_date`     | DATE         | Data di nascita                           |
-| `nationality`    | VARCHAR2(50) | Nazionalità                              |
-| `height_cm`      | NUMBER(3)    | Altezza in centimetri                     |
-| `preferred_foot` | VARCHAR2(10) | 'left', 'right' o 'both'                  |
-| `joined_club`    | DATE         | Data di ingresso nel club                  |
-| `contract_until` | DATE         | Data di scadenza del contratto             |
+| `player_number`  | NUMBER(2)    | Numero di maglia univoco                             |
+| `position`       | VARCHAR2(50) | Ruolo in campo del giocatore              			 |
+| `first_name`     | VARCHAR2(50) | Nome                                      		     |
+| `last_name`      | VARCHAR2(50) | Cognome                                 		     |
+| `birth_date`     | DATE         | Data di nascita                           			 |
+| `nationality`    | VARCHAR2(50) | Nazionalità                               			 |
+| `height_cm`      | NUMBER(3)    | Altezza in centimetri                     			 |
+| `preferred_foot` | VARCHAR2(10) | 'left', 'right' o 'both'                  			 |
+| `joined_club`    | DATE         | Data di ingresso nel club                 			 |
+| `contract_until` | DATE         | Data di scadenza del contratto            			 |
+
+### Tabella: `transfers`
+
+| Nome Colonna              | Tipo Dato     | Descrizione                                                        |
+| ------------------------- | ------------- | ------------------------------------------------------------------ |
+| `transfer_id`             | NUMBER        | Chiave primaria                                                    |
+| `player_name`             | VARCHAR2(50)  | Nome completo del giocatore                                        |
+| `player_id`               | NUMBER        | Chiave esterna che fa riferimento a `players(player_id)`           |
+| `season`                  | VARCHAR2(10)  | Stagione del trasferimento (es. '2024/2025')                       |
+| `transfer_direction`      | VARCHAR2(3)   | 'in' o 'out' (direzione del trasferimento)                         |
+| `transfer_type`           | VARCHAR2(15)  | 'loan', 'permanent', 'free', 'promotion', 'retired', 'end of loan' |
+| `transfer_date`           | DATE          | Data del trasferimento                                             |
+| `from_club`               | VARCHAR2(100) | Club di provenienza                                                |
+| `to_club`                 | VARCHAR2(100) | Club di destinazione                                               |
+| `transfer_fee_eur`        | NUMBER(10, 2) | Costo del trasferimento in Euro                                    |
+| `appearances_last_season` | NUMBER(3)     | Presenze nell’ultima stagione                                      |
+| `goals_last_season`       | NUMBER(3)     | Gol nell’ultima stagione                                           |
+| `assists_last_season`     | NUMBER(3)     | Assist nell’ultima stagione                                        |
 
 ### Sequenza
 
 - `player_seq` – gestisce l’auto-incremento del campo `player_id`
+- `transfer_seq` – gestisce l’auto-incremento del campo `transfer_id`
 
 ---
 
@@ -80,8 +99,8 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
 1. Vai alla cartella **/sql/players_table** per visualizzare o copiare gli script SQL completi  
 2. Apri **DBeaver** e connettiti alla tua istanza locale di OracleXE  
 3. Esegui gli script SQL per:  
-   - Eliminare e ricreare la tabella `players`  
-   - Creare la sequenza `player_seq`  
+   - Eliminare e ricreare le tabelle `players` e `transfers`
+   - Creare la sequenza `player_seq` e `transfer_seq`  
    - Inserire tutti i dati di esempio  
 
 ---
