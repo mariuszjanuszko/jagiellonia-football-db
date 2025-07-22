@@ -79,7 +79,7 @@ Includes over **25 real players** currently associated with **Jagiellonia Biały
 - 🛡️ Centre-backs  
 - ⚙️ Midfielders  
 - 🌀 Wingers  
-- 🎯 Centre-forwards
+- 🎯 Centre-forwards  
 
 ---
 
@@ -87,15 +87,23 @@ Includes over **25 real players** currently associated with **Jagiellonia Biały
 
 The /sql/queries folder contains analytical queries to explore the players database, including:
 
-    🇵🇱 List of all Polish players
+	🇵🇱 List of all Polish players
 
-    👟 Search for ambidextrous players
+	👟 Search for ambidextrous players
 
-    📆 Count of players by contract expiration date
+	📆 Count of players by contract expiration date
 
-    🎂 Calculation of players’ age
+	🎂 Calculation of players’ age
 
-    🏆 Player with the longest tenure at the club
+	🏆 Player with the longest tenure at the club
+
+	📥 List of all incoming players
+
+	💸 Net transfer fee balance
+
+	🌍 Count of incoming players by nationality
+
+	👶 List of five youngest incoming players
 
 ---
 

@@ -86,11 +86,23 @@ Include oltre **25 giocatori reali** attualmente associati alla **Jagiellonia Bi
 
 La cartella **/sql/queries** contiene query analitiche per esplorare il database dei giocatori, tra cui:
 
-- 🇵🇱 Elenco di tutti i giocatori polacchi  
-- 👟 Ricerca dei giocatori ambidestri  
-- 📆 Conteggio dei giocatori per data di scadenza del contratto  
-- 🎂 Calcolo dell'età dei giocatori  
-- 🏆 Giocatore da più tempo nel club  
+	🇵🇱 Elenco di tutti i giocatori polacchi
+	
+	👟 Ricerca dei giocatori ambidestri
+	
+	📆 Conteggio dei giocatori per data di scadenza del contratto
+	
+	🎂 Calcolo dell'età dei giocatori
+	
+	🏆 Giocatore da più tempo nel club
+	
+	📥 Elenco di tutti i giocatori in arrivo
+	
+	💸 Saldo netto delle spese di trasferimento
+	
+	🌍 Conteggio dei giocatori in arrivo per nazionalità
+	
+	👶 Elenco dei cinque giocatori in arrivo più giovani
 
 ---
 
