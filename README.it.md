@@ -4,7 +4,7 @@
 
 Questo è un progetto personale di database SQL ispirato alla **Jagiellonia Białystok**, la squadra di calcio professionistica della mia città natale.
 
-Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modella i dati principali dei giocatori della squadra, come ruoli, attributi fisici, nazionalità e dettagli contrattuali.
+Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modella i dati principali dei giocatori della squadra, come ruoli, attributi fisici, nazionalità, dettagli contrattuali, trasferimenti e risultati delle partite.
 
 ---
 
@@ -45,6 +45,16 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 | `joined_club`    | DATE         | Data di ingresso nel club                 			 |
 | `contract_until` | DATE         | Data di scadenza del contratto            			 |
 
+### Tabella: `clubs
+
+| Nome Colonna | Tipo Dato    | Descrizione                  |
+| ------------ | ------------ | ---------------------------- |
+| `club_id`    | NUMBER       | Chiave primaria              |
+| `club_name`  | VARCHAR2(50) | Nome della squadra (univoco) |
+| `country`    | VARCHAR2(50) | Nazione del club             |
+| `league`     | VARCHAR2(50) | Campionato di appartenenza   |
+
+
 ### Tabella: `transfers`
 
 | Nome Colonna              | Tipo Dato     | Descrizione                                                        |
@@ -63,10 +73,28 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 | `goals_last_season`       | NUMBER(3)     | Gol nell’ultima stagione                                           |
 | `assists_last_season`     | NUMBER(3)     | Assist nell’ultima stagione                                        |
 
+### Tabella: `results`
+
+| Nome Colonna        | Tipo Dato    | Descrizione                                    |
+| ------------------- | ------------ | ---------------------------------------------- |
+| `match_id`          | NUMBER       | Chiave primaria                                |
+| `season`            | VARCHAR2(10) | Stagione (es. '2024/2025')                     |
+| `match_date`        | DATE         | Data della partita                             |
+| `opponent_club_id`  | NUMBER       | Chiave esterna da `clubs(club_id)`             |
+| `home_or_away`      | VARCHAR2(4)  | 'HOME' o 'AWAY'                                |
+| `jagiellonia_goals` | NUMBER(2)    | Gol segnati da Jagiellonia                     |
+| `opponent_goals`    | NUMBER(2)    | Gol segnati dalla squadra avversaria           |
+| `competition`       | VARCHAR2(50) | Competizione (es. 'Ekstraklasa', 'Polish Cup') |
+| `attendance`        | NUMBER(5)    | Numero di spettatori                           |
+| `stadium`           | VARCHAR2(50) | Nome dello stadio (se diverso da casa)         |
+
+
 ### Sequenza
 
 - `player_seq` – gestisce l’auto-incremento del campo `player_id`
 - `transfer_seq` – gestisce l’auto-incremento del campo `transfer_id`
+- `club_seq` – gestisce l’auto-incremento del campo `club_id`
+- `match_seq` – gestisce l’auto-incremento del campo `match_id`
 
 ---
 
