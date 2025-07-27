@@ -86,7 +86,7 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 | `opponent_goals`    | NUMBER(2)    | Gol segnati dalla squadra avversaria           |
 | `competition`       | VARCHAR2(50) | Competizione (es. 'Ekstraklasa', 'Polish Cup') |
 | `attendance`        | NUMBER(5)    | Numero di spettatori                           |
-| `stadium`           | VARCHAR2(50) | Nome dello stadio (se diverso da casa)         |
+| `stadium`           | VARCHAR2(50) | Nome dello stadio        |
 
 
 ### Sequenza
