@@ -1,0 +1,8 @@
+DROP TABLE clubs;
+
+CREATE TABLE clubs(
+club_id NUMBER PRIMARY KEY,
+club_name VARCHAR2(50) UNIQUE NOT NULL,
+country VARCHAR2(50),
+league VARCHAR2(50)
+)
