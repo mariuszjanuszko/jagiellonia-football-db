@@ -27,6 +27,26 @@ The database is built using **DBeaver** on **OracleXE 21.3**. It models key data
 
 ---
 
+## 📊 Power BI Project: Jagiellonia Transfers Dashboard
+
+This Power BI report provides an interactive and comprehensive visualization of Jagiellonia Białystok’s player transfers.  
+**Key Features:**
+
+- Summary Cards display total number of incoming and outgoing transfers alongside the net transfer fee (EUR), helping to quickly understand transfer activity at a glance.  
+- Transfers Table lists detailed transfer information, including player name, transfer date, type (e.g., loan, permanent), other club involved, and transfer fee.  
+- Bar Chart visualizes the destinations of transfers by country, showing where players are coming from or going to.  
+- Interactive Slicer and Navigation Button allow users to switch between incoming and outgoing transfers dynamically:  
+  - A custom button triggers a transparent overlay with a slicer for transfer direction selection (in or out).  
+  - Selecting the direction updates both the transfers table and the transfers destination bar chart accordingly.  
+
+**Purpose:**
+
+- To analyze and track transfer patterns specifically for Jagiellonia Białystok.  
+- To demonstrate skills in creating dynamic reports with user-friendly navigation and interactivity.  
+- To highlight proficiency in Power BI features such as cards, tables, bar charts, slicers, and layered navigation using shapes and buttons.  
+
+---
+
 ## 📂 Database Overview
 
 ### Table: `players`
@@ -142,6 +162,10 @@ The /sql/queries folder contains analytical queries to explore the players datab
    - Drop and recreate the `players` and `transfers` tables  
    - Create the `player_seq` and `transfer_seq` sequences  
    - Insert all sample data
+4. Open the Power BI project  
+   - Navigate to the `/power bi/` folder in the repo  
+   - Open the `.pbix` file with **Power BI Desktop**  
+   - Explore the interactive Jagiellonia Transfers Dashboard  
 
 ---
 
@@ -152,7 +176,7 @@ The /sql/queries folder contains analytical queries to explore the players datab
   - `staff`
   - `injuries`
   - `contracts`
-- 📊 Build **Power BI** dashboards (age distribution, nationality breakdown, contract timelines)  
+- 📊 Expand **Power BI** dashboards with additional reports (age distribution, nationality breakdown, contract timelines) beyond the existing Jagiellonia Transfers Dashboard
 - 🐍 Use **Python** to analyze trends (e.g., player age vs. contract length)  
 - 🧠 Create complex SQL queries (aggregates, joins, subqueries)  
 - 📤 Export ERD diagram for documentation  
