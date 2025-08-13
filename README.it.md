@@ -27,6 +27,26 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 
 ---
 
+📊 Progetto Power BI: Jagiellonia Transfers Dashboard
+
+Questo report Power BI offre una visualizzazione interattiva e completa dei trasferimenti dei giocatori della Jagiellonia Białystok.
+**Caratteristiche principali:**
+
+- Carte di riepilogo mostrano il numero totale di trasferimenti in entrata e in uscita insieme al saldo netto delle spese di trasferimento (in EUR), per una rapida panoramica dell’attività di mercato.
+- Tabella dei trasferimenti con dettagli quali nome giocatore, data trasferimento, tipo (prestito, permanente, ecc.), club coinvolto e costo del trasferimento. 
+- Grafico a barre che visualizza la destinazione dei trasferimenti per paese, mostrando da dove arrivano o dove vanno i giocatori.
+- Slicer interattivo e pulsante di navigazione per passare dinamicamente tra trasferimenti in entrata e in uscita:
+  - Un pulsante personalizzato apre una sovrapposizione trasparente con uno slicer per selezionare la direzione del trasferimento (in o out). 
+  - La selezione aggiorna sia la tabella dei trasferimenti sia il grafico a barre delle destinazioni.
+
+**Obiettivi:**
+
+- Analizzare e monitorare i modelli di trasferimento specifici della Jagiellonia Białystok.
+- Dimostrare competenze nella creazione di report dinamici con navigazione e interattività user-friendly.
+- Mettere in evidenza la padronanza di funzionalità di Power BI come carte, tabelle, grafici a barre, slicer e navigazione a livelli tramite forme e pulsanti.
+	
+---
+
 ## 📂 Panoramica del Database
 
 ### Tabella: `players`
@@ -86,7 +106,7 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 | `opponent_goals`    | NUMBER(2)    | Gol segnati dalla squadra avversaria           |
 | `competition`       | VARCHAR2(50) | Competizione (es. 'Ekstraklasa', 'Polish Cup') |
 | `attendance`        | NUMBER(5)    | Numero di spettatori                           |
-| `stadium`           | VARCHAR2(50) | Nome dello stadio        |
+| `stadium`           | VARCHAR2(50) | Nome dello stadio         					  |
 
 
 ### Sequenza
@@ -141,7 +161,11 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
 3. Esegui gli script SQL per:  
    - Eliminare e ricreare le tabelle `players` e `transfers`
    - Creare la sequenza `player_seq` e `transfer_seq`  
-   - Inserire tutti i dati di esempio  
+   - Inserire tutti i dati di esempio
+4. Apri il progetto Power BI
+   - Naviga nella cartella /power bi/ del repository
+   - Apri il file .pbix con Power BI Desktop
+   - Esplora la dashboard interattiva dei trasferimenti di Jagiellonia
 
 ---
 
@@ -152,7 +176,7 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
   - `staff`  
   - `injuries`  
   - `contracts`  
-- 📊 Costruire dashboard in **Power BI** (distribuzione età, nazionalità, scadenze contratti)  
+- 📊 Espandere le dashboard di Power BI con report aggiuntivi (distribuzione età, suddivisione per nazionalità, scadenze contratti) oltre all’attuale Jagiellonia Transfers Dashboard
 - 🐍 Utilizzare **Python** per analizzare trend (es. età vs durata del contratto)  
 - 🧠 Creare query SQL complesse (aggregazioni, join, sottoquery)  
 - 📤 Esportare il diagramma ERD per la documentazione  
