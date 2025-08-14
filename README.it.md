@@ -151,6 +151,12 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
 	🌍 Conteggio dei giocatori in arrivo per nazionalità
 	
 	👶 Elenco dei cinque giocatori in arrivo più giovani
+ 
+ 	🏟 Elenco degli stadi con una media di spettatori superiore a 15.000
+
+	⚽ Risultati e avversari delle partite giocate allo stadio 'Chorten' con affluenza ≥ 19.000
+
+	🔍 Ricerca dei trasferimenti che coinvolgono un determinato club (senza distinzione tra maiuscole e minuscole) con dettagli su tipo, direzione e importo
 
 ---
 
@@ -189,3 +195,4 @@ Sono un aspirante **Data Analyst** attualmente impegnato a migliorare le mie com
 Questo database riflette sia la mia crescita tecnica che la mia passione per il calcio e per la mia squadra del cuore — **Jagiellonia Białystok**.
 
 Puoi trovare questo progetto su **GitHub** e linkato nel mio **CV**.
+
