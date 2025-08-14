@@ -150,7 +150,13 @@ The /sql/queries folder contains analytical queries to explore the players datab
 
 	🌍 Count of incoming players by nationality
 
-	👶 List of five youngest incoming players
+	👶 List of five youngest incoming players	
+ 
+ 	🏟 List of stadiums with an average attendance greater than 15,000
+
+	⚽ Results and opponents for matches played at 'Chorten' stadium with attendance ≥ 19,000
+
+	🔍 Search transfers involving a specific club name (case-insensitive) with details on type, direction, and fee
 
 ---
 
@@ -189,3 +195,4 @@ I'm an aspiring **Data Analyst** currently improving my skills in SQL, data mode
 This database reflects both my technical growth and my passion for football and my home team — **Jagiellonia Białystok**.
 
 You can find this project on **GitHub** and linked in my **CV**.
+
