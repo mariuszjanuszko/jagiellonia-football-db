@@ -1,4 +1,4 @@
-🇬🇧 English version available: (README.md)
+🇬🇧 English version available: [README.md](README.md)
 
 # Query SQL Analitiche
 
@@ -27,4 +27,5 @@ Possono essere utilizzate per estrarre informazioni sui giocatori, analizzare i 
 ## 📌 Come Utilizzare
 1. Apri il file `.sql` che vuoi eseguire.  
 2. Eseguilo nel tuo ambiente SQL (es. Oracle SQL Developer, DBeaver o SQL*Plus) connesso al database calcistico del Jagiellonia.  
+
 3. Modifica i parametri come `:club` se necessario.
