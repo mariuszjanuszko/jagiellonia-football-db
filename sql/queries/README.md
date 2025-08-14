@@ -1,4 +1,4 @@
-🇮🇹 Versione italiana disponibile: (README.it.md)
+🇮🇹 Versione italiana disponibile: [README.it.md](README.it.md)
 
 # SQL Analytical Queries
 
@@ -27,4 +27,5 @@ They can be used to extract player information, analyze match results, review tr
 ## 📌 How to Use
 1. Open the `.sql` file you want to execute.  
 2. Run it in your SQL environment (e.g., Oracle SQL Developer, DBeaver, or SQL*Plus) connected to the Jagiellonia Football Database.  
+
 3. Modify parameters like `:club` if needed.
