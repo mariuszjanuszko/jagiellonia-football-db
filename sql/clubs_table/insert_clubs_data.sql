@@ -36,3 +36,5 @@ INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Portimonense', 'Portugal', 'Primeira
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'UD Almeria', 'Spain', 'Segunda División');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'CD Tenerife', 'Spain', 'Segunda División');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Columbus Crew', 'United States', 'Major League Soccer');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Silkeborg IF', 'Denmark', 'Superligaen ');
+
