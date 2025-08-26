@@ -32,18 +32,24 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 Questo report Power BI offre una visualizzazione interattiva e completa dei trasferimenti dei giocatori della Jagiellonia Białystok.
 **Caratteristiche principali:**
 
-- Carte di riepilogo mostrano il numero totale di trasferimenti in entrata e in uscita insieme al saldo netto delle spese di trasferimento (in EUR), per una rapida panoramica dell’attività di mercato.
-- Tabella dei trasferimenti con dettagli quali nome giocatore, data trasferimento, tipo (prestito, permanente, ecc.), club coinvolto e costo del trasferimento. 
-- Grafico a barre che visualizza la destinazione dei trasferimenti per paese, mostrando da dove arrivano o dove vanno i giocatori.
-- Slicer interattivo e pulsante di navigazione per passare dinamicamente tra trasferimenti in entrata e in uscita:
+- **Carte di riepilogo** mostrano il numero totale di trasferimenti in entrata e in uscita insieme al saldo netto delle spese di trasferimento (in EUR), per una rapida panoramica dell’attività di mercato.
+- **Tabella dei trasferimenti** con dettagli quali nome giocatore, data trasferimento, tipo (prestito, permanente, ecc.), club coinvolto e costo del trasferimento. 
+- **Grafico a barre** che visualizza la destinazione dei trasferimenti per paese, mostrando da dove arrivano o dove vanno i giocatori.
+- **Slicer interattivo** e pulsante di navigazione per passare dinamicamente tra trasferimenti in entrata e in uscita:
   - Un pulsante personalizzato apre una sovrapposizione trasparente con uno slicer per selezionare la direzione del trasferimento (in o out). 
   - La selezione aggiorna sia la tabella dei trasferimenti sia il grafico a barre delle destinazioni.
+- **Drillthrough Profilo Giocatore**: cliccando con il tasto destro su un giocatore nella tabella dei trasferimenti si apre una pagina dedicata con il **profilo dettagliato del calciatore**, che include:
+  - Ruolo, nazionalità, età, altezza, piede preferito
+  - Statistiche della scorsa stagione (presenze, gol, assist)
+  - Dettagli contrattuali (club di arrivo, scadenza contratto)
+  - Icone e visual personalizzate per un design più intuitivo e a tema calcistico
 
 **Obiettivi:**
 
 - Analizzare e monitorare i modelli di trasferimento specifici della Jagiellonia Białystok.
 - Dimostrare competenze nella creazione di report dinamici con navigazione e interattività user-friendly.
 - Mettere in evidenza la padronanza di funzionalità di Power BI come carte, tabelle, grafici a barre, slicer e navigazione a livelli tramite forme e pulsanti.
+- Mostrare l’utilizzo delle pagine di Drillthrough per i profili dettagliati dei giocatori, integrando più punti dati (dati anagrafici, statistiche, informazioni contrattuali) in un’unica vista interattiva.
 	
 ---
 
@@ -195,4 +201,5 @@ Sono un aspirante **Data Analyst** attualmente impegnato a migliorare le mie com
 Questo database riflette sia la mia crescita tecnica che la mia passione per il calcio e per la mia squadra del cuore — **Jagiellonia Białystok**.
 
 Puoi trovare questo progetto su **GitHub** e linkato nel mio **CV**.
+
 
