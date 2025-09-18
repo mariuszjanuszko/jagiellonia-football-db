@@ -58,9 +58,9 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 ### Tabella: `players`
 
 | Nome Colonna      | Tipo Dato    | Descrizione                               			 |
-|------------------|--------------|------------------------------------------------------|
+|------------------|--------------|----------------------------------------------------- |
 | `player_id`      | NUMBER       | Chiave primaria (auto-incrementata tramite sequenza) |
-| `player_number`  | NUMBER(2)    | Numero di maglia univoco                             |
+| `player_number`  | NUMBER(2)    | Numero di maglia                             		 |
 | `position`       | VARCHAR2(50) | Ruolo in campo del giocatore              			 |
 | `first_name`     | VARCHAR2(50) | Nome                                      		     |
 | `last_name`      | VARCHAR2(50) | Cognome                                 		     |
@@ -68,24 +68,22 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 | `nationality`    | VARCHAR2(50) | Nazionalità                               			 |
 | `height_cm`      | NUMBER(3)    | Altezza in centimetri                     			 |
 | `preferred_foot` | VARCHAR2(10) | 'left', 'right' o 'both'                  			 |
-| `joined_club`    | DATE         | Data di ingresso nel club                 			 |
-| `contract_until` | DATE         | Data di scadenza del contratto            			 |
 
 ### Tabella: `clubs
 
-| Nome Colonna | Tipo Dato    | Descrizione                  |
-| ------------ | ------------ | ---------------------------- |
-| `club_id`    | NUMBER       | Chiave primaria              |
-| `club_name`  | VARCHAR2(50) | Nome della squadra (univoco) |
-| `country`    | VARCHAR2(50) | Nazione del club             |
-| `league`     | VARCHAR2(50) | Campionato di appartenenza   |
+| Nome Colonna | Tipo Dato    | Descrizione                                                     |
+| ------------ | ------------ | --------------------------------------------------------------- |
+| `club_id`    | NUMBER       | Chiave primaria (auto-incrementata tramite sequenza)            |
+| `club_name`  | VARCHAR2(50) | Nome della squadra (univoco)                                    |
+| `country`    | VARCHAR2(50) | Nazione del club                                                |
+| `league`     | VARCHAR2(50) | Campionato di appartenenza                                      |
 
 
 ### Tabella: `transfers`
 
 | Nome Colonna              | Tipo Dato     | Descrizione                                                        |
 | ------------------------- | ------------- | ------------------------------------------------------------------ |
-| `transfer_id`             | NUMBER        | Chiave primaria                                                    |
+| `transfer_id`             | NUMBER        | Chiave primaria (auto-incrementata tramite sequenza)               |
 | `player_name`             | VARCHAR2(50)  | Nome completo del giocatore                                        |
 | `player_id`               | NUMBER        | Chiave esterna che fa riferimento a `players(player_id)`           |
 | `season`                  | VARCHAR2(10)  | Stagione del trasferimento (es. '2024/2025')                       |
@@ -101,18 +99,28 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 
 ### Tabella: `results`
 
-| Nome Colonna        | Tipo Dato    | Descrizione                                    |
-| ------------------- | ------------ | ---------------------------------------------- |
-| `match_id`          | NUMBER       | Chiave primaria                                |
-| `season`            | VARCHAR2(10) | Stagione (es. '2024/2025')                     |
-| `match_date`        | DATE         | Data della partita                             |
-| `opponent_club_id`  | NUMBER       | Chiave esterna da `clubs(club_id)`             |
-| `home_or_away`      | VARCHAR2(4)  | 'HOME' o 'AWAY'                                |
-| `jagiellonia_goals` | NUMBER(2)    | Gol segnati da Jagiellonia                     |
-| `opponent_goals`    | NUMBER(2)    | Gol segnati dalla squadra avversaria           |
-| `competition`       | VARCHAR2(50) | Competizione (es. 'Ekstraklasa', 'Polish Cup') |
-| `attendance`        | NUMBER(5)    | Numero di spettatori                           |
-| `stadium`           | VARCHAR2(50) | Nome dello stadio         					  |
+| Nome Colonna        | Tipo Dato    | Descrizione                                                        |
+| ------------------- | ------------ | ------------------------------------------------------------------ |
+| `match_id`          | NUMBER       | Chiave primaria (auto-incrementata tramite sequenza)               |
+| `season`            | VARCHAR2(10) | Stagione (es. '2024/2025')                                         |
+| `match_date`        | DATE         | Data della partita                                                 |
+| `opponent_club_id`  | NUMBER       | Chiave esterna da `clubs(club_id)`                                 |
+| `home_or_away`      | VARCHAR2(4)  | 'HOME' o 'AWAY'                                                    |
+| `jagiellonia_goals` | NUMBER(2)    | Gol segnati da Jagiellonia                                         |
+| `opponent_goals`    | NUMBER(2)    | Gol segnati dalla squadra avversaria                               |
+| `competition`       | VARCHAR2(50) | Competizione (es. 'Ekstraklasa', 'Polish Cup')                     |
+| `attendance`        | NUMBER(5)    | Numero di spettatori                                               |
+| `stadium`           | VARCHAR2(50) | Nome dello stadio         					                      |
+
+### Tabella: `contracts`
+
+| Nome Colonna    | Tipo Dato | Descrizione                                                     		  |
+| --------------- | --------- |-------------------------------------------------------------------------- |
+| contract_id     | NUMBER    | Chiave primaria (auto-incrementata tramite sequence)                      |
+| player_id       | NUMBER    | Chiave esterna che fa riferimento a `players(player_id)`                  |
+| join_date       | DATE      | Data in cui il giocatore è entrato nel club                               |
+| leave_date      | DATE      | Data in cui il giocatore ha lasciato il club (NULL se ancora attivo)      |
+| contract_until  | DATE      | Data di scadenza originaria del contratto                                 |
 
 
 ### Sequenza
@@ -121,6 +129,7 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 - `transfer_seq` – gestisce l’auto-incremento del campo `transfer_id`
 - `club_seq` – gestisce l’auto-incremento del campo `club_id`
 - `match_seq` – gestisce l’auto-incremento del campo `match_id`
+- `contract_seq` – gestisce l’auto-incremento di `contract_id`
 
 ---
 
@@ -157,8 +166,8 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
 	🌍 Conteggio dei giocatori in arrivo per nazionalità
 	
 	👶 Elenco dei cinque giocatori in arrivo più giovani
- 
- 	🏟 Elenco degli stadi con una media di spettatori superiore a 15.000
+	
+	🏟 Elenco degli stadi con una media di spettatori superiore a 15.000
 
 	⚽ Risultati e avversari delle partite giocate allo stadio 'Chorten' con affluenza ≥ 19.000
 
@@ -201,5 +210,3 @@ Sono un aspirante **Data Analyst** attualmente impegnato a migliorare le mie com
 Questo database riflette sia la mia crescita tecnica che la mia passione per il calcio e per la mia squadra del cuore — **Jagiellonia Białystok**.
 
 Puoi trovare questo progetto su **GitHub** e linkato nel mio **CV**.
-
-

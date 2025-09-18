@@ -12,7 +12,7 @@ The database is built using **DBeaver** on **OracleXE 21.3**. It models key data
 
 - Learn and practice relational database design  
 - Simulate real-world data structures using football as context  
-- Prepare for a career as a **Data Analyst**  
+- Prepare for a career as a **Data Analyst**
 - Build portfolio material for GitHub and CV
 
 ---
@@ -58,9 +58,9 @@ This Power BI report provides an interactive and comprehensive visualization of 
 ### Table: `players`
 
 | Column Name       | Data Type     | Description                                |
-|------------------|---------------|--------------------------------------------|
+| ----------------- | ------------- | ------------------------------------------ |
 | `player_id`       | NUMBER        | Primary key (auto-incremented via sequence)|
-| `player_number`   | NUMBER(2)     | Unique shirt number                        |
+| `player_number`   | NUMBER(2)     | Shirt number                        		 |
 | `position`        | VARCHAR2(50)  | Player’s on-field position                 |
 | `first_name`      | VARCHAR2(50)  | First name                                 |
 | `last_name`       | VARCHAR2(50)  | Last name                                  |
@@ -68,24 +68,22 @@ This Power BI report provides an interactive and comprehensive visualization of 
 | `nationality`     | VARCHAR2(50)  | Country of origin                          |
 | `height_cm`       | NUMBER(3)     | Height in centimeters                      |
 | `preferred_foot`  | VARCHAR2(10)  | 'left', 'right', or 'both'                 |
-| `joined_club`     | DATE          | Date the player joined the club            |
-| `contract_until`  | DATE          | Contract expiration date                   |
 
 ### Table: `clubs`
 
-| Column Name | Data Type    | Description                 |
-| ----------- | ------------ | --------------------------- |
-| `club_id`   | NUMBER       | Primary key                 |
-| `club_name` | VARCHAR2(50) | Unique name of the club     |
-| `country`   | VARCHAR2(50) | Country of the club         |
-| `league`    | VARCHAR2(50) | League the club competes in |
+| Column Name | Data Type    | Description                 							   |
+| ----------- | ------------ | ------------------------------------------------------- |
+| `club_id`   | NUMBER       | Primary key (auto-incremented via sequence)             |
+| `club_name` | VARCHAR2(50) | Unique name of the club      						   |
+| `country`   | VARCHAR2(50) | Country of the club         							   |
+| `league`    | VARCHAR2(50) | League the club competes in  						   |
 
 
 ### Table: `transfers`
 
 | Column Name               | Data Type    | Description                                                        |
 | ------------------------- | ------------ | ------------------------------------------------------------------ |
-| `transfer_id`             | NUMBER       | Primary key                                                        |
+| `transfer_id`             | NUMBER       | Primary key (auto-incremented via sequence)                        |
 | `player_name`             | VARCHAR2(50) | Player's full name                                                 |
 | `player_id`               | NUMBER       | Foreign key referencing `players(player_id)`                       |
 | `season`                  | VARCHAR2(10) | Season of the transfer (e.g., '2024/2025')                         |
@@ -100,27 +98,36 @@ This Power BI report provides an interactive and comprehensive visualization of 
 
 ### Table: `results`
 
-| Column Name         | Data Type    | Description                                |
-| ------------------- | ------------ | ------------------------------------------ |
-| `match_id`          | NUMBER       | Primary key                                |
-| `season`            | VARCHAR2(10) | Match season (e.g., '2024/2025')           |
-| `match_date`        | DATE         | Date of the match                          |
-| `opponent_club_id`  | NUMBER       | FK to `clubs(club_id)` (the opposing team) |
-| `home_or_away`      | VARCHAR2(4)  | 'HOME' or 'AWAY'                           |
-| `jagiellonia_goals` | NUMBER(2)    | Goals scored by Jagiellonia                |
-| `opponent_goals`    | NUMBER(2)    | Goals scored by the opponent               |
-| `competition`       | VARCHAR2(50) | League or tournament name                  |
-| `attendance`        | NUMBER(5)    | Number of spectators                       |
-| `stadium`           | VARCHAR2(50) | Venue where the match was played           |
+| Column Name         | Data Type    | Description                                                |
+| ------------------- | ------------ | ---------------------------------------------------------- |
+| `match_id`          | NUMBER       | Primary key (auto-incremented via sequence)                |
+| `season`            | VARCHAR2(10) | Match season (e.g., '2024/2025')                           |
+| `match_date`        | DATE         | Date of the match                                          |
+| `opponent_club_id`  | NUMBER       | FK to `clubs(club_id)` (the opposing team)                 |
+| `home_or_away`      | VARCHAR2(4)  | 'HOME' or 'AWAY'                                           |
+| `jagiellonia_goals` | NUMBER(2)    | Goals scored by Jagiellonia                                |
+| `opponent_goals`    | NUMBER(2)    | Goals scored by the opponent                               |
+| `competition`       | VARCHAR2(50) | League or tournament name                                  |
+| `attendance`        | NUMBER(5)    | Number of spectators                                       |
+| `stadium`           | VARCHAR2(50) | Venue where the match was played                           |
 
+### Table: contracts
 
+| Column Name     | Data Type | Description                                                       |
+| --------------- | --------- | ----------------------------------------------------------------- |
+| contract_id     | NUMBER    | Primary key (auto-incremented via sequence)                       |
+| player_id       | NUMBER    | Foreign key referencing `players(player_id)`                      |
+| join_date       | DATE      | Date when the player joined the club                              |
+| leave_date      | DATE      | Date when the player left the club (NULL if still active)         |
+| contract_until  | DATE      | Original end date of the contract          						  |
 
 ### Sequence
 
 - `player_seq` – handles auto-incrementing of `player_id`
 - `transfer_seq` – handles auto-incrementing of `transfer_id`
--  `club_seq` – handles auto-incrementing of `club_id`
+- `club_seq` – handles auto-incrementing of `club_id`
 - `match_seq` – handles auto-incrementing of `match_id`
+- contract_seq – handles auto-incrementing of contract_id
 
 ---
 
@@ -156,9 +163,9 @@ The /sql/queries folder contains analytical queries to explore the players datab
 
 	🌍 Count of incoming players by nationality
 
-	👶 List of five youngest incoming players	
- 
- 	🏟 List of stadiums with an average attendance greater than 15,000
+	👶 List of five youngest incoming players
+	
+	🏟 List of stadiums with an average attendance greater than 15,000
 
 	⚽ Results and opponents for matches played at 'Chorten' stadium with attendance ≥ 19,000
 
@@ -178,7 +185,7 @@ The /sql/queries folder contains analytical queries to explore the players datab
    - Navigate to the `/power bi/` folder in the repo  
    - Open the `.pbix` file with **Power BI Desktop**  
    - Explore the interactive Jagiellonia Transfers Dashboard  
-
+   
 ---
 
 ## 🔮 Future Plans
@@ -201,5 +208,3 @@ I'm an aspiring **Data Analyst** currently improving my skills in SQL, data mode
 This database reflects both my technical growth and my passion for football and my home team — **Jagiellonia Białystok**.
 
 You can find this project on **GitHub** and linked in my **CV**.
-
-
