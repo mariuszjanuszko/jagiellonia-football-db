@@ -69,7 +69,7 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 | `height_cm`      | NUMBER(3)    | Altezza in centimetri                     			 |
 | `preferred_foot` | VARCHAR2(10) | 'left', 'right' o 'both'                  			 |
 
-### Tabella: `clubs
+### Tabella: `clubs`
 
 | Nome Colonna | Tipo Dato    | Descrizione                                                     |
 | ------------ | ------------ | --------------------------------------------------------------- |

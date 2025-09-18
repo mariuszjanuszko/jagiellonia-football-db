@@ -111,7 +111,7 @@ This Power BI report provides an interactive and comprehensive visualization of 
 | `attendance`        | NUMBER(5)    | Number of spectators                                       |
 | `stadium`           | VARCHAR2(50) | Venue where the match was played                           |
 
-### Table: contracts
+### Table: `contracts`
 
 | Column Name      | Data Type | Description                                                      |
 | ---------------- | --------- | ---------------------------------------------------------------  |
@@ -143,7 +143,7 @@ Includes over 25 players, 25+ clubs, and match results from real Jagiellonia fix
 
 ---
 
-##📄 SQL Queries
+## 📄 SQL Queries
 
 The /sql/queries folder contains analytical queries to explore the players database, including:
 
