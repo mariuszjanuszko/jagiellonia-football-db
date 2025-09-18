@@ -57,7 +57,7 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 
 ### Tabella: `players`
 
-| Nome Colonna      | Tipo Dato    | Descrizione                               			 |
+| Nome Colonna     | Tipo Dato    | Descrizione                               			 |
 |------------------|--------------|----------------------------------------------------- |
 | `player_id`      | NUMBER       | Chiave primaria (auto-incrementata tramite sequenza) |
 | `player_number`  | NUMBER(2)    | Numero di maglia                             		 |
@@ -116,12 +116,11 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 
 | Nome Colonna    | Tipo Dato | Descrizione                                                     		  |
 | --------------- | --------- |-------------------------------------------------------------------------- |
-| contract_id     | NUMBER    | Chiave primaria (auto-incrementata tramite sequence)                      |
-| player_id       | NUMBER    | Chiave esterna che fa riferimento a `players(player_id)`                  |
-| join_date       | DATE      | Data in cui il giocatore è entrato nel club                               |
-| leave_date      | DATE      | Data in cui il giocatore ha lasciato il club (NULL se ancora attivo)      |
-| contract_until  | DATE      | Data di scadenza originaria del contratto                                 |
-
+| `contract_id`   | NUMBER    | Chiave primaria (auto-incrementata tramite sequence)                      |
+| `player_id`     | NUMBER    | Chiave esterna che fa riferimento a `players(player_id)`                  |
+| `join_date`     | DATE      | Data in cui il giocatore è entrato nel club                               |
+| `leave_date`    | DATE      | Data in cui il giocatore ha lasciato il club (NULL se ancora attivo)      |
+| `contract_until`| DATE      | Data di scadenza originaria del contratto                                 |
 
 ### Sequenza
 

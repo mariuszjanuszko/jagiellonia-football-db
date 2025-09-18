@@ -113,13 +113,13 @@ This Power BI report provides an interactive and comprehensive visualization of 
 
 ### Table: contracts
 
-| Column Name     | Data Type | Description                                                       |
-| --------------- | --------- | ----------------------------------------------------------------- |
-| contract_id     | NUMBER    | Primary key (auto-incremented via sequence)                       |
-| player_id       | NUMBER    | Foreign key referencing `players(player_id)`                      |
-| join_date       | DATE      | Date when the player joined the club                              |
-| leave_date      | DATE      | Date when the player left the club (NULL if still active)         |
-| contract_until  | DATE      | Original end date of the contract          						  |
+| Column Name      | Data Type | Description                                                      |
+| ---------------- | --------- | ---------------------------------------------------------------  |
+| `contract_id`    | NUMBER    | Primary key (auto-incremented via sequence)                      |
+| `player_id`      | NUMBER    | Foreign key referencing `players(player_id)`                     |
+| `join_date`      | DATE      | Date when the player joined the club                             |
+| `leave_date`     | DATE      | Date when the player left the club (NULL if still active)        |
+| `contract_until` | DATE      | Original end date of the contract          				      |
 
 ### Sequence
 
@@ -127,7 +127,7 @@ This Power BI report provides an interactive and comprehensive visualization of 
 - `transfer_seq` – handles auto-incrementing of `transfer_id`
 - `club_seq` – handles auto-incrementing of `club_id`
 - `match_seq` – handles auto-incrementing of `match_id`
-- contract_seq – handles auto-incrementing of contract_id
+- `contract_seq` – handles auto-incrementing of contract_id
 
 ---
 
