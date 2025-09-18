@@ -1,6 +1,6 @@
 CREATE TABLE players (
     player_id NUMBER PRIMARY KEY,
-    player_number NUMBER(2) UNIQUE,
+    player_number NUMBER(2),
     position VARCHAR2(50),
     first_name VARCHAR2(50),
     last_name VARCHAR2(50),
