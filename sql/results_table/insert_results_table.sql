@@ -15,4 +15,6 @@ INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('21-08-2025', '
 INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('28-08-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='FC Dinamo City'), 'Away', 1, 1,'UEFA Conference League Qualification', 2644, 'Air Albania Stadium, Tirana');
 INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('31-08-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Lechia Gdansk'), 'Home', 2, 0,'PKO Bank Polski Ekstraklasa', 19589, 'Chorten Arena, Bialystok');
 INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('13-09-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Piast Gliwice'), 'Away', 1, 1,'PKO Bank Polski Ekstraklasa', 6956, 'Stadion Miejski im. Piotra Wieczorka, Gliwice');
+INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('19-09-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Wisla Plock'), 'Away', 1, 0,'PKO Bank Polski Ekstraklasa', 10121, 'Orlen Stadion, Plock');
+
 
