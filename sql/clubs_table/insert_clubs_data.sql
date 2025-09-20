@@ -43,3 +43,5 @@ INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Clermont Foot 63', 'France', 'Ligue 
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Levante UD', 'Spain', 'Segunda División');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Wieczysta Krakow', 'Poland', 'Betclic 1. Liga');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'FC Dinamo City', 'Albania', 'Kategoria Superiore');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Dobrudzha Dobrich', 'Bulgaria', 'efbet Liga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Thep Xanh Nam Dinh FC ', 'Vietnam', 'V.League 1');
