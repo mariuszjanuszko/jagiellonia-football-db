@@ -41,7 +41,7 @@ This Power BI report provides an interactive and comprehensive visualization of 
 - **Drillthrough Player Profile**: Right-clicking on any player in the transfers table opens a dedicated **Player Profile Page**, showing detailed information such as:
   - Position, nationality, age, height, preferred foot
   - Last season stats (appearances, goals, assists)
-  - Contract details (joined club, contract until)
+  - Contract details (joined club, contract until/leaving date)
   - Custom icons and visuals for a more intuitive, football-themed design
 
 **Purpose:**

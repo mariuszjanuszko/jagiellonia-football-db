@@ -41,7 +41,7 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 - **Drillthrough Profilo Giocatore**: cliccando con il tasto destro su un giocatore nella tabella dei trasferimenti si apre una pagina dedicata con il **profilo dettagliato del calciatore**, che include:
   - Ruolo, nazionalità, età, altezza, piede preferito
   - Statistiche della scorsa stagione (presenze, gol, assist)
-  - Dettagli contrattuali (club di arrivo, scadenza contratto)
+  - Dettagli contrattuali (club di arrivo, scadenza contratto/data di partenza)
   - Icone e visual personalizzate per un design più intuitivo e a tema calcistico
 
 **Obiettivi:**
