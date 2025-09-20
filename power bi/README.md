@@ -13,7 +13,7 @@ This Power BI report provides an interactive and comprehensive visualization of 
 
   * A custom button triggers a transparent overlay with a slicer for transfer direction selection (in or out).
   * Selecting the direction updates both the transfers table and the transfers destination bar chart accordingly.
-* **Drillthrough** functionality allows users to view detailed player information on a dedicated page, including nationality, position, appearances, goals, assists, age, height, and contract details.
+* **Drillthrough** functionality allows users to view detailed player information on a dedicated page, including nationality, position, appearances, goals, assists, age, height, and contract or leaving date details.
 
 **Purpose:**
 
@@ -36,3 +36,4 @@ This Power BI report provides an interactive and comprehensive visualization of 
 #### Drillthrough: Player Details
 
 ![Drillthrough Player Details](./screenshots/Drillthrough%20player%20details.jpg)
+
