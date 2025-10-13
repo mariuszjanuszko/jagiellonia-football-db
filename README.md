@@ -170,6 +170,8 @@ The /sql/queries folder contains analytical queries to explore the players datab
 	⚽ Results and opponents for matches played at 'Chorten' stadium with attendance ≥ 19,000
 
 	🔍 Search transfers involving a specific club name (case-insensitive) with details on type, direction, and fee
+	
+	📅 Matches played after the first international break of the 2025/26 season, including date, opponent, result, and match outcome (Victory / Draw / Defeat)
 
 ---
 

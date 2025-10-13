@@ -171,6 +171,8 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
 	⚽ Risultati e avversari delle partite giocate allo stadio 'Chorten' con affluenza ≥ 19.000
 
 	🔍 Ricerca dei trasferimenti che coinvolgono un determinato club (senza distinzione tra maiuscole e minuscole) con dettagli su tipo, direzione e importo
+	
+	📅 Partite giocate dopo la prima sosta internazionale della stagione 2025/26, inclusi data, avversario, risultato e esito della partita (Vittoria / Pareggio / Sconfitta)
 
 ---
 
