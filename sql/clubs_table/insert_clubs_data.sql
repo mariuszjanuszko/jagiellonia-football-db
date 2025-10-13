@@ -1,6 +1,6 @@
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Lech Poznan', 'Poland', 'PKO Bank Polski Ekstraklasa');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Rakow Czestochowa', 'Poland', 'PKO Bank Polski Ekstraklasa');
-INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Polonia Warszawa', 'Poland', 'Betclic 1. Liga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Polonia Warszawa', 'Poland', 'I liga (second tier)');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Asteras Tripolis B', 'Greece', 'Super League 2');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Udinese', 'Italy', 'Serie A');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Spezia', 'Italy', 'Serie B');
@@ -41,7 +41,8 @@ INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Royal Charleroi SC', 'Belgium', 'Jup
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Granada CF', 'Spain', 'Segunda División');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Clermont Foot 63', 'France', 'Ligue 2');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Levante UD', 'Spain', 'Segunda División');
-INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Wieczysta Krakow', 'Poland', 'Betclic 1. Liga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Wieczysta Krakow', 'Poland', 'I liga (second tier)');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'FC Dinamo City', 'Albania', 'Kategoria Superiore');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Dobrudzha Dobrich', 'Bulgaria', 'efbet Liga');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Thep Xanh Nam Dinh FC ', 'Vietnam', 'V.League 1');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Hamrun Spartans', 'Malta', 'YoHealth Premier League');
