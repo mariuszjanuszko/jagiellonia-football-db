@@ -21,11 +21,10 @@ Possono essere utilizzate per estrarre informazioni sui giocatori, analizzare i 
 |  | [select_transferred_players_detail_by_typing_other_club_name.sql](select_transferred_players_detail_by_typing_other_club_name.sql) | Cerca trasferimenti che coinvolgono un club specifico (case-insensitive) con dettagli su tipo, direzione e commissione |
 | 🏟 Partite & Presenze | [select_stadiums_with_avg_attendance_greater_than_15000.sql](select_stadiums_with_avg_attendance_greater_than_15000.sql) | Elenca stadi con media spettatori superiore a 15.000 |
 |  | [select_results_chorten_stadium_attendance_19000_plus.sql](select_results_chorten_stadium_attendance_19000_plus.sql) | Mostra risultati e avversari delle partite giocate allo stadio 'Chorten' con presenze ≥ 19.000 |
-
+|  | [select_all_games_after_first_international_break.sql](select_all_games_after_first_international_break.sql) | Partite del Jagiellonia Białystok giocate dopo la prima sosta internazionale della stagione 2025/26, inclusi data, avversario, risultato e esito della partita (Vittoria / Pareggio / Sconfitta) |
 ---
 
 ## 📌 Come Utilizzare
 1. Apri il file `.sql` che vuoi eseguire.  
 2. Eseguilo nel tuo ambiente SQL (es. Oracle SQL Developer, DBeaver o SQL*Plus) connesso al database calcistico del Jagiellonia.  
-
 3. Modifica i parametri come `:club` se necessario.

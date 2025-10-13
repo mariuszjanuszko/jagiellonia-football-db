@@ -21,11 +21,10 @@ They can be used to extract player information, analyze match results, review tr
 |  | [select_transferred_players_detail_by_typing_other_club_name.sql](select_transferred_players_detail_by_typing_other_club_name.sql) | Searches transfers involving a specific club name (case-insensitive) with details on type, direction, and fee |
 | 🏟 Match & Attendance | [select_stadiums_with_avg_attendance_greater_than_15000.sql](select_stadiums_with_avg_attendance_greater_than_15000.sql) | Lists stadiums with an average attendance greater than 15,000 |
 |  | [select_results_chorten_stadium_attendance_19000_plus.sql](select_results_chorten_stadium_attendance_19000_plus.sql) | Shows results and opponents for matches played at the 'Chorten' stadium with attendance ≥ 19,000 |
-
+|  | [select_all_games_after_first_international_break.sql](select_all_games_after_first_international_break.sql) | Matches played after the first international break of the 2025/26 season, including date, opponent, result, and match outcome (Victory / Draw / Defeat) |
 ---
 
 ## 📌 How to Use
 1. Open the `.sql` file you want to execute.  
 2. Run it in your SQL environment (e.g., Oracle SQL Developer, DBeaver, or SQL*Plus) connected to the Jagiellonia Football Database.  
-
 3. Modify parameters like `:club` if needed.
