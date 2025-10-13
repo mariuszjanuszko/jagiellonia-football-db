@@ -16,5 +16,7 @@ INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('28-08-2025', '
 INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('31-08-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Lechia Gdansk'), 'Home', 2, 0,'PKO Bank Polski Ekstraklasa', 19589, 'Chorten Arena, Bialystok');
 INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('13-09-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Piast Gliwice'), 'Away', 1, 1,'PKO Bank Polski Ekstraklasa', 6956, 'Stadion Miejski im. Piotra Wieczorka, Gliwice');
 INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('19-09-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Wisla Plock'), 'Away', 1, 0,'PKO Bank Polski Ekstraklasa', 10121, 'Orlen Stadion, Plock');
-
-
+INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('24-09-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Legia Warszawa'), 'Away', 0, 0,'PKO Bank Polski Ekstraklasa', 24884, 'Stadion Wojska Polskiego, Warszawa');
+INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('28-09-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Lech Poznan'), 'Away', 2, 2,'PKO Bank Polski Ekstraklasa', 35299, 'Enea Stadion, Poznan');
+INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('02-10-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Hamrun Spartans'), 'Home', 1, 0,'UEFA Conference League League Phase', 17469, 'Chorten Arena, Bialystok');
+INSERT INTO results VALUES(match_seq.NEXTVAL, '2025/26', TO_DATE('05-10-2025', 'DD-MM-YYYY'), (SELECT club_id FROM clubs WHERE club_name='Korona Kielce'), 'Home', 3, 1,'PKO Bank Polski Ekstraklasa', 19007, 'Chorten Arena, Bialystok');
