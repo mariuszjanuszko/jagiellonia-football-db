@@ -30,6 +30,7 @@ The database is built using **DBeaver** on **OracleXE 21.3**. It models key data
 ## 📊 Power BI Project: Jagiellonia Transfers Dashboard
 
 This Power BI report provides an interactive and comprehensive visualization of Jagiellonia Białystok’s player transfers.  
+
 **Key Features:**
 
 - **Summary Cards** display total number of incoming and outgoing transfers alongside the net transfer fee (EUR), helping to quickly understand transfer activity at a glance.  
@@ -50,6 +51,35 @@ This Power BI report provides an interactive and comprehensive visualization of 
 - To demonstrate skills in creating dynamic reports with user-friendly navigation and interactivity.  
 - To highlight proficiency in Power BI features such as cards, tables, bar charts, slicers, and layered navigation using shapes and buttons.  
 - To showcase the use of Drillthrough pages for detailed player profiles, integrating multiple data points (demographics, stats, contract info) into a single interactive view.
+
+---
+
+## 🐍 Python Analysis
+
+The Python part of this project focuses on analysing match performance and travel distance for Jagiellonia Białystok.
+
+Data is extracted from the Oracle database and processed using pandas for cleaning, transformation, and analysis.
+
+**Key steps:**
+
+- Connection to the Oracle database using SQLAlchemy
+- Extraction of match and club data using SQL queries
+- Data cleaning and column standardization
+- Creation of a result column (win, draw, loss)
+- Division of the season into phases based on international breaks
+- Calculation of travel distance between match locations using geopy
+- Aggregation of results and travel metrics per season phase
+
+**Analysis includes:**
+- Match-by-match performance overview
+- Results per season phase
+- Performance comparison across competitions
+- Relationship between travel distance and match results
+
+**Goal:**
+
+The goal of this section is to explore whether team performance is influenced by travel load and match scheduling.
+The analysis is exploratory, meaning it is used to identify patterns rather than to prove direct causation.
 
 ---
 
@@ -198,7 +228,7 @@ The /sql/queries folder contains analytical queries to explore the players datab
   - `injuries`
   - `contracts`
 - 📊 Expand **Power BI** dashboards with additional reports (age distribution, nationality breakdown, contract timelines) beyond the existing Jagiellonia Transfers Dashboard
-- 🐍 Use **Python** to analyze trends (e.g., player age vs. contract length)  
+- 🐍 Use **Python** to analyze trends
 - 🧠 Create complex SQL queries (aggregates, joins, subqueries)  
 - 📤 Export ERD diagram for documentation  
 

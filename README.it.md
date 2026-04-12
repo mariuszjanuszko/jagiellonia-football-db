@@ -2,7 +2,7 @@
 
 # 📊 Progetto Database Calcistico — Jagiellonia Białystok
 
-Questo è un progetto personale di database SQL ispirato alla **Jagiellonia Białystok**, la squadra di calcio professionistica della mia città natale.
+Questo è un progetto personale di database SQL ispirato allo **Jagiellonia Białystok**, la squadra di calcio professionistica della mia città natale.
 
 Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modella i dati principali dei giocatori della squadra, come ruoli, attributi fisici, nazionalità, dettagli contrattuali, trasferimenti e risultati delle partite.
 
@@ -27,9 +27,10 @@ Il database è stato creato utilizzando **DBeaver** su **OracleXE 21.3**. Modell
 
 ---
 
-📊 Progetto Power BI: Jagiellonia Transfers Dashboard
+## 📊 Progetto Power BI: Jagiellonia Transfers Dashboard
 
-Questo report Power BI offre una visualizzazione interattiva e completa dei trasferimenti dei giocatori della Jagiellonia Białystok.
+Questo report Power BI offre una visualizzazione interattiva e completa dei trasferimenti dei giocatori dello Jagiellonia Białystok.
+
 **Caratteristiche principali:**
 
 - **Carte di riepilogo** mostrano il numero totale di trasferimenti in entrata e in uscita insieme al saldo netto delle spese di trasferimento (in EUR), per una rapida panoramica dell’attività di mercato.
@@ -51,6 +52,36 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 - Mettere in evidenza la padronanza di funzionalità di Power BI come carte, tabelle, grafici a barre, slicer e navigazione a livelli tramite forme e pulsanti.
 - Mostrare l’utilizzo delle pagine di Drillthrough per i profili dettagliati dei giocatori, integrando più punti dati (dati anagrafici, statistiche, informazioni contrattuali) in un’unica vista interattiva.
 	
+---
+
+## 🐍 Analisi Python
+
+La parte Python di questo progetto si concentra sull’analisi delle prestazioni delle partite e dei chilometri di viaggio dello Jagiellonia Białystok.
+
+I dati vengono estratti dal database Oracle ed elaborati utilizzando pandas per pulizia, trasformazione e analisi.
+
+**Passaggi principali:**
+
+- Connessione al database Oracle tramite SQLAlchemy
+- Estrazione dei dati di partite e club tramite query SQL
+- Pulizia dei dati e standardizzazione delle colonne
+- Creazione della colonna result (vittoria, pareggio, sconfitta)
+- Divisione della stagione in fasi basate sulle pause internazionali
+- Calcolo della distanza di viaggio tra le sedi delle partite utilizzando geopy
+- Aggregazione dei risultati e dei chilometri percorsi per ogni fase della stagione
+
+**L’analisi include:**
+
+- Panoramica partita per partita delle prestazioni
+- Risultati per fase della stagione
+- Confronto delle prestazioni tra diverse competizioni
+- Relazione tra distanza di viaggio e risultati delle partite
+
+**Obiettivo:**
+
+L’obiettivo di questa sezione è verificare se le prestazioni della squadra sono influenzate dal carico di viaggio e dal calendario delle partite.
+L’analisi è esplorativa, cioè serve a identificare possibili pattern e non a dimostrare una relazione causale diretta.
+
 ---
 
 ## 📂 Panoramica del Database
@@ -134,7 +165,7 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 
 ## 🧪 Dati di Esempio
 
-Include oltre **25 giocatori reali** attualmente associati alla **Jagiellonia Białystok**, tra cui:
+Include oltre **25 giocatori reali** attualmente associati allo **Jagiellonia Białystok**, tra cui:
 
 - 🧤 Portieri  
 - 🛡️ Difensori centrali  
@@ -199,7 +230,7 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
   - `injuries`  
   - `contracts`  
 - 📊 Espandere le dashboard di Power BI con report aggiuntivi (distribuzione età, suddivisione per nazionalità, scadenze contratti) oltre all’attuale Jagiellonia Transfers Dashboard
-- 🐍 Utilizzare **Python** per analizzare trend (es. età vs durata del contratto)  
+- 🐍 Utilizzare **Python** per analizzare trend
 - 🧠 Creare query SQL complesse (aggregazioni, join, sottoquery)  
 - 📤 Esportare il diagramma ERD per la documentazione  
 
