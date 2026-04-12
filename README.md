@@ -216,7 +216,11 @@ The /sql/queries folder contains analytical queries to explore the players datab
 4. Open the Power BI project  
    - Navigate to the `/power bi/` folder in the repo  
    - Open the `.pbix` file with **Power BI Desktop**  
-   - Explore the interactive Jagiellonia Transfers Dashboard  
+   - Explore the interactive Jagiellonia Transfers Dashboard
+5. Open the `/python/` folder in the repository  
+   - You will find the Jupyter Notebook (`.ipynb`) containing the full Python analysis  
+   - It can be opened with **Jupyter Notebook** or **VS Code**  
+   - It includes data cleaning, performance analysis, and travel distance calculations
    
 ---
 

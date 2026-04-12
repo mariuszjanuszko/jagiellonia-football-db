@@ -217,8 +217,12 @@ La cartella **/sql/queries** contiene query analitiche per esplorare il database
    - Inserire tutti i dati di esempio
 4. Apri il progetto Power BI
    - Naviga nella cartella /power bi/ del repository
-   - Apri il file .pbix con Power BI Desktop
+   - Apri il file .pbix con **Power BI Desktop**
    - Esplora la dashboard interattiva dei trasferimenti di Jagiellonia
+5. Apri la cartella `/python/` del repository  
+   - Troverai il notebook Jupyter (`.ipynb`) con tutta l’analisi Python  
+   - Puoi aprirlo con **Jupyter Notebook** o **VS Code** 
+   - Include pulizia dati, analisi delle prestazioni e calcolo delle distanze di viaggio
 
 ---
 
