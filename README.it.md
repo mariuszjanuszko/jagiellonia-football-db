@@ -47,7 +47,7 @@ Questo report Power BI offre una visualizzazione interattiva e completa dei tras
 
 **Obiettivi:**
 
-- Analizzare e monitorare i modelli di trasferimento specifici della Jagiellonia Białystok.
+- Analizzare e monitorare i modelli di trasferimento specifici dello Jagiellonia Białystok.
 - Dimostrare competenze nella creazione di report dinamici con navigazione e interattività user-friendly.
 - Mettere in evidenza la padronanza di funzionalità di Power BI come carte, tabelle, grafici a barre, slicer e navigazione a livelli tramite forme e pulsanti.
 - Mostrare l’utilizzo delle pagine di Drillthrough per i profili dettagliati dei giocatori, integrando più punti dati (dati anagrafici, statistiche, informazioni contrattuali) in un’unica vista interattiva.
