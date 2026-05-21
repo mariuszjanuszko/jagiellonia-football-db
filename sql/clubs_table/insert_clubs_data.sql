@@ -53,3 +53,25 @@ INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Pogon Grodzisk Mazowiecki', 'Poland'
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Kuopion Palloseura', 'Finland', 'Veikkausliiga');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Rayo Vallecano de Madrid', 'Spain', 'Primera Division');
 INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'AZ (Alkmaar)', 'Netherlands', 'Eredivisie')
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'GKS Tychy', 'Poland', 'Betclic 1. Liga (second tier)');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'SD Huesca', 'Spain', 'Segunda Division');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Hvidovre IF', 'Denmark', '1.Division (second tier)');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Vancouver Whitecaps FC', 'United States', 'Major League Soccer');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Maccabi Haifa', 'Israel', q'[Ligat ha'Al]');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'CF Estrela Amadora ', 'Portugal', 'Liga Portugal ');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Linzer ASK', 'Austria', 'Bundesliga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'CSKA 1948 Sofia', 'Bulgaria', 'efbet Liga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'FK Cukaricki', 'Serbia', 'Serbian SuperLiga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'ACF Fiorentina', 'Italy', 'Serie A');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'FC Porto ', 'Portugal', 'Liga Portugal ');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'GKS Tychy', 'Poland', 'Betclic 1. Liga (second tier)');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'SD Huesca', 'Spain', 'Segunda Division');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Hvidovre IF', 'Denmark', '1.Division (second tier)');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Vancouver Whitecaps FC', 'United States', 'Major League Soccer');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Maccabi Haifa', 'Israel', q'[Ligat ha'Al]');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'CF Estrela Amadora ', 'Portugal', 'Liga Portugal ');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'Linzer ASK', 'Austria', 'Bundesliga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'CSKA 1948 Sofia', 'Bulgaria', 'efbet Liga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'FK Cukaricki', 'Serbia', 'Serbian SuperLiga');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'ACF Fiorentina', 'Italy', 'Serie A');
+INSERT INTO clubs VALUES(club_seq.NEXTVAL, 'FC Porto ', 'Portugal', 'Liga Portugal ');
